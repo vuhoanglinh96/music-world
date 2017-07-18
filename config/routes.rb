@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root "static_pages#index"
+  get "index", to: "static_pages#index"
+  get "/home", to: "static_pages#home"
+  get "/artist", to: "static_pages#artist"
+  get "/track", to: "static_pages#track"
 end
