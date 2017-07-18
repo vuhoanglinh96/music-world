@@ -1,0 +1,69 @@
+<% provide :title, full_title("Home") %>
+
+<body>
+<%= render "shared/swipe" %>
+<div class="container contant">
+<div class="row">
+<div class="site-overlay"></div>
+
+<!--content-->
+<div class="col-md-12 basic">
+
+<!--head-->
+<div class="head">
+<a href="index.html" class="logo"><img src="img/logo.png" alt="Mycity"/></a>
+<a href="#" class="green-btn-header" id="ad"><i class="fa fa-plus"></i></a><input type="text" class="search" placeholder="search">
+</div>
+<div class="place-li-cont">
+<!--headlines-->
+<h1>Welcome, Linh</h1>
+<p class="lead">Let's enjoy the rhythm</p>
+<!--Blog category-->
+<ul class="blog-cat">
+<li><a href="#" class="shop"><i class="fa fa-shopping-cart"></i>Pop</a></li>
+<li><a href="#" class="cinema"><i class="fa fa-film"></i>Rock</a></li>
+<li><a href="#" class="club"><i class="fa fa-beer"></i>EDM</a></li>
+<li><a href="#" class="cafe"><i class="fa fa-cutlery"></i>R&B</a></li>
+<li><a href="#" class="sport"><i class="fa fa-futbol-o"></i>Dance</a></li>
+<li><a href="#" class="port"><i class="fa fa-life-ring"></i>Classical</a></li>
+<li><a href="#" class="bank"><i class="fa fa-university"></i>Requiem</a></li>
+<li><a href="#" class="post"><i class="fa fa-envelope-o"></i>Blues</a></li>
+<li><a href="#" class="showplace"><i class="fa fa-eye"></i>Cover</a></li>
+<li><a href="#" class="park"><i class="fa fa-leaf"></i>Ballad</a></li>
+</ul>
+
+<!--place style list-->
+<div class="pg style-list">
+<!--features-->
+<img src="img/pl3.jpg" alt="">
+<div class="con">
+<h2>
+  <%= link_to "Aloha", track_path %>
+  <h4><%= link_to "Cool", artist_path %></h4>
+</h2>
+<span>Để trình phát nhạc ở đây</span>
+<a href="02.html" class="comm"><i class="fa fa-comments"></i>234 Comments</a>
+</div>
+</div>
+<!--place style list-->
+<div class="pg style-list">
+<!--features-->
+<img src="img/pl2.jpg" alt="">
+<div class="con">
+<h2>
+  <%= link_to "Tiến quân ca", track_path %>
+  <h4><%= link_to "Trọng tấn", artist_path %></h4>
+</h2>
+<span>Để trình phát nhạc ở đây</span>
+<a href="02.html" class="comm"><i class="fa fa-comments"></i>234 Comments</a>
+</div>
+</div>
+
+</div>
+<!--morebtn-->
+<a href="#" class="more-btn">Load more</a>
+</div>
+</div>
+</div>
+
+</body>
