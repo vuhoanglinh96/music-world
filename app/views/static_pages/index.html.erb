@@ -17,8 +17,9 @@
     </div>
     <div class="btns">
       <%= link_to t(".getstart"), home_path, class: "green" %>
-      <%= link_to t("login"), home_path, class: "white-border" %>
+      <button class="white-border" id="login">Log in</button>
     </div>
+    <%= render "shared/login_form" %>
   </div>
   <%= render "animation_image" %>
   <div class="bgg"></div>
