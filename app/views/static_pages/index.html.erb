@@ -3,36 +3,23 @@
 <body class="promo">
   <div class="start-descrition option animated fadeInDownBig">
     <a href="#" class="start-logo"><img src="img/start/logo.png" alt=""></a>
-    <h1>welcome to the MusicWorld<span></span></h1>
-    <span>Discover and share a constantly expanding mix of music from
-      emerging and major artists around the world.</span>
+    <h1><%= t ".welcome" %><span></span></h1>
+    <span><%= t ".discover" %></span>
     <div class="search-promo">
       <div class="input-group">
         <input type="text" class="form-control" aria-label="..."
         placeholder="Search for tracks or artists">
         <div class="input-group-btn btn-promo-search">
-          <button type="button" class="btn btn-success">Search</button>
+          <button type="button" class="btn btn-success">
+            <%= t "search" %></button>
         </div>
       </div>
     </div>
     <div class="btns">
-      <%= link_to "Get started", home_path, class: "green" %>
-      <%= link_to "Login", home_path, class: "white-border" %>
+      <%= link_to t(".getstart"), home_path, class: "green" %>
+      <%= link_to t("login"), home_path, class: "white-border" %>
     </div>
   </div>
-  <div class="animation">
-      <img src="img/start/01.png" class="option animated fadeInDownBig one-element" alt="#">
-      <img src="img/start/02.png" class="option animated fadeInDownBig two-element" alt="#">
-      <img src="img/start/03.png" class="option animated fadeInDownBig three-element" alt="#">
-      <img src="img/start/04.png" class="option animated fadeInDownBig four-element" alt="#">
-      <img src="img/start/05.png" class="option animated fadeInDownBig five-element" alt="#">
-      <img src="img/start/06.png" class="option animated fadeInDownBig six-element" alt="#">
-      <img src="img/start/07.png" class="option animated fadeInRightBig seven-element" alt="#">
-      <img src="img/start/08.png" class="option animated fadeInLeftBig eight-element" alt="#">
-      <img src="img/start/09.png" class="option animated fadeInDownBig nine-element" alt="#">
-      <img src="img/start/10.png" class="option animated fadeInUpBig ten-element" alt="#">
-      <img src="img/start/11.png" class="option animated fadeInUpBig quote-element" alt="#">
-      <img src="img/start/12.png" class="option animated fadeInUpBig quote-two-element" alt="#">
-  </div>
+  <%= render "animation_image" %>
   <div class="bgg"></div>
 </body>
