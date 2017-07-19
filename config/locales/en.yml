@@ -1,0 +1,22 @@
+en:
+  hello: "Hello world"
+  search: "Search"
+  login: Login
+  logout: Log out
+  pop: "Pop"
+  rock: "Rock"
+  edm: "EDM"
+  rb: "R&B"
+  dance: "Dance"
+  classical: "Classical"
+  requiem: "Requiem"
+  blues: "Blues"
+  cover: "Cover"
+  ballad: "Ballad"
+  static_pages:
+    index:
+      welcome: "welcome to the MusicWorld"
+      discover: "Discover and share a constantly expanding mix of music from
+      emerging and major artists around the world."
+      getstart: "Get started"
+
