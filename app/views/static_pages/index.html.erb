@@ -17,8 +17,10 @@
     </div>
     <div class="btns">
       <%= link_to t(".getstart"), home_path, class: "green" %>
-      <%= link_to t("login"), home_path, class: "white-border" %>
+      <%= link_to t("login"), "#", class: "white-border",
+        data: {toggle: "modal", target: "#autorized"} %>
     </div>
+    <%= render "shared/login_form" %>
   </div>
   <%= render "animation_image" %>
   <div class="bgg"></div>
