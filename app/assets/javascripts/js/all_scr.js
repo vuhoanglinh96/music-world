@@ -19,6 +19,14 @@ $(document).ready(function () {
   })
 
   //////Autorization//////
+  $('#login').on('click', function () {
+      "use strict";
+          $('.modal-backdrop').remove();
+    $('#autorized').removeClass("none");
+    $('#pushy').removeClass("pushy-open");
+    $('#pushy').addClass("pushy-left");
+    $('body').removeClass('pushy-active');
+  })
   $('.log_btn').on('click', function () {
       "use strict";
     $('#autorized').removeClass("none");
@@ -30,7 +38,7 @@ $(document).ready(function () {
 
   //////Page load//////
   $("body").css("display", "none");
-  $("body").fadeIn(900);
+  $("body").fadeIn(50);
   $("a.transition").click(function(event){
       "use strict";
     event.preventDefault();
