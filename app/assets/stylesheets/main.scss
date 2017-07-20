@@ -15,6 +15,13 @@ $co242a33: #242a33;
 $co03aaac: #03aaac;
 $co63737c: #63737c;
 $co011222: #011222;
+$co353535: #353535;
+$co95c800: #95c800;
+$shadow: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 0.9);
+$co_rgba00084: rgba(0, 0, 0, 0.84);
+$co_rgba255: rgba(255, 0, 0, 0);
+$co94c700: #94c700;
 
 body {
   background: url('../img/start/bg.jpg');
@@ -262,8 +269,8 @@ a:hover {
 
     a:hover {
       color: $cofff;
-      text-decoration: none;
       background: $co03aaac;
+      text-decoration: none;
 
       i {
         background: $co03aaac;
@@ -286,98 +293,98 @@ a:hover {
 }
 
 .animation {
-  position: absolute;
-  width: 1200px;
-  min-width: 1200px;
-  height: 100%;
-  overflow: hidden;
   bottom: 0;
+  height: 100%;
   left: 50%;
   margin-left: -600px;
+  min-width: 1200px;
+  overflow: hidden;
+  position: absolute;
+  width: 1200px;
 }
 
 .bgg {
   background: url('../img/start/bg.jpg');
   background-position: center bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
   background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .green-button {
   background: $co97c900;
-  padding: 8px 20px;
   border-radius: 3px;
   color: $cofff;
   font-weight: bold;
+  padding: 8px 20px;
   transition: .3s;
 }
 
 .green-button:hover {
-  background: #353535;
-  padding: 8px 20px;
+  background: $co353535;
   border-radius: 3px;
   color: $cofff;
   font-weight: bold;
+  padding: 8px 20px;
   text-decoration: none;
   transition: .3s;
 }
 
 .dark-button {
-  background: #353535;
-  padding: 8px 20px;
+  background: $co353535;
   border-radius: 3px;
   color: $cofff;
   font-weight: bold;
+  padding: 8px 20px;
   transition: .3s;
 }
 
 .dark-button:hover {
   background: $cofff;
-  padding: 8px 20px;
   border-radius: 3px;
-  color: #353535;
+  color: $co353535;
   font-weight: bold;
+  padding: 8px 20px;
   text-decoration: none;
   transition: .3s;
 }
 
 .start-descrition {
-  z-index: 9999;
-  text-align: center;
-  position: absolute;
-  width: 1200px;
-  top: 50%;
-  margin-top: -260px;
   left: 50%;
   margin-left: -600px;
+  margin-top: -260px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 1200px;
+  z-index: 9999;
 }
 
 .start-descrition .start-logo {}
 
 .start-descrition h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
   color: $cofff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .start-descrition h1 span {
+  background: $co95c800;
   display: block;
-  width: 150px;
   height: 1px;
-  background: #95c800;
   margin: 40px auto;
+  width: 150px;
 }
 
 .start-descrition span {
+  color: $cofff;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-weight: 300;
-  color: $cofff;
   line-height: 36px;
 }
 
@@ -386,135 +393,135 @@ a:hover {
 }
 
 .start-descrition .btns .green {
-  background: #95c800;
-  padding: 15px 35px;
+  background: $co95c800;
   border-radius: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
   color: $cofff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0 15px;
+  padding: 15px 35px;
+  text-decoration: none;
 }
 
 .start-descrition .btns .green:hover {
   background: $cofff;
-  padding: 15px 35px;
   border-radius: 3px;
+  color: $co95c800;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
   font-size: 16px;
-  color: #95c800;
+  font-weight: 500;
   margin: 0 15px;
+  padding: 15px 35px;
+  text-decoration: none;
 }
 
 .start-descrition .btns .white-border {
   background: none;
-  padding: 14px 35px;
-  border-radius: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  color: $cofff;
   border: 2px solid;
+  border-radius: 3px;
+  color: $cofff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0 15px;
+  padding: 14px 35px;
+  text-decoration: none;
 }
 
 .start-descrition .btns .white-border:hover{
   background: none;
-  padding: 14px 35px;
-  border-radius: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  color: #94C700;
   border: 2px solid;
+  border-radius: 3px;
+  color: $co94c700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0 15px;
+  padding: 14px 35px;
+  text-decoration: none;
 }
 
 .one-element {
+  bottom: -300px;
   position: absolute;
   right: 143px;
-  bottom: -300px;
   z-index: 3;
 }
 
 .two-element {
-  position: absolute;
-  left: 350px;
   bottom: -40px;
+  left: 350px;
+  position: absolute;
   z-index: 2;
 }
 
 .three-element {
-  position: absolute;
-  left: 243px;
   bottom: 227px;
+  left: 243px;
+  position: absolute;
   z-index: 2;
 }
 
 .four-element {
-  position: absolute;
-  left: 78px;
   bottom: 80px;
+  left: 78px;
+  position: absolute;
   z-index: 2;
 }
 
 .five-element {
-  position: absolute;
   bottom: 80px;
   left: 533px;
+  position: absolute;
   z-index: 2;
 }
 
 .six-element {
-  position: absolute;
   bottom: 201px;
+  position: absolute;
   right: 277px;
   z-index: 2;
 }
 
 .seven-element {
+  bottom: 164px;
   position: absolute;
   right: 82px;
-  bottom: 164px;
   z-index: 2;
 }
 
 .eight-element {
-  position: absolute;
-  left: 60px;
   bottom: 180px;
+  left: 60px;
+  position: absolute;
   z-index: 2;
 }
 
 .nine-element {
-  position: absolute;
   bottom: 144px;
+  position: absolute;
   right: 463px;
   z-index: 2;
 }
 
 .ten-element {
-  position: absolute;
   bottom: -70px;
   left: 57px;
+  position: absolute;
   z-index: 1;
 }
 
 .quote-element {
-  position: absolute;
   bottom: 246px;
+  position: absolute;
   right: 213px;
   z-index: 2;
 }
 
 .quote-two-element {
-  position: absolute;
   bottom: 205px;
+  position: absolute;
   left: 22px;
   z-index: 2;
 }
@@ -590,46 +597,46 @@ a:hover {
 }
 
 .map {
-  width: 100%;
   height: 100%;
   position: fixed !important;
+  width: 100%;
 }
 
 .menu {
-  position: fixed;
-  z-index: 9;
-  background: rgba(0, 0, 0, 0.9);
-  width: 100%;
+  background: $black;
   bottom: 0;
+  margin: 0;
   max-height: 65px;
   overflow: hidden;
-  margin: 0;
   padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
 
 .menu ul {
   margin: 0;
+  max-width: 1600px;
   padding: 0;
   text-align: center;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
 .menu li {
-  list-style: none;
   display: inline-block;
-  width: 9%;
+  list-style: none;
   margin: 0 -2px;
   padding: 0;
+  width: 9%;
 }
 
 .menu li a {
+  color: $shadow;
   display: block;
-  color: rgba(255, 255, 255, 1);
   font-size: 26px;
   font-weight: normal;
-  text-align: center;
   padding: 11px 0;
+  text-align: center;
   text-decoration: none;
   transition: .3s;
 }
@@ -703,100 +710,100 @@ a:hover {
 }
 
 .marker-info .info {
-  width: 300px;
-  height: 320px;
+  background: $co_rgba00084;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.84);
+  height: 320px;
   position: relative;
+  width: 300px;
   z-index: 9999999;
 }
 
 .marker-info .info img {
-  display: block;
+  background: $cofff;
+  border: 7px solid #e9e5db;
   border-radius: 100px;
-  width: 110px;
+  display: block;
+  left: 90px;
   position: absolute;
   top: -53px;
-  left: 90px;
-  border: 7px solid #e9e5db;
-  background: $cofff;
+  width: 110px;
 }
 .marker-info .info h2 {
-  text-align: center;
-  padding-top: 70px;
+  color: $cofff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: $cofff;
+  padding-top: 70px;
+  text-align: center;
 }
 .marker-info .info h2 span {
-width: 70px;
-height: 1px;
   background: #78C803;
-display: block;
+  display: block;
+  height: 1px;
   margin: 15px auto;
+  width: 70px;
 }
 .marker-info .info span {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   color: $cofff;
-  line-height: 22px;
-  text-align: center;
   display: block;
-  padding: 0 30px;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 0 30px;
+  text-align: center;
 }
 
 .marker-info .info a {}
 a.green-btn {
-  background: #95c800;
+  background: $co95c800;
   border: 1px solid #000000;
-  padding: 10px 50px;
-  color: $cofff;
-  font-size: 14px;
   border-radius: 4px;
-  display: block;
-  width: 180px;
-  text-align: center;
   bottom: 40px;
-  position: absolute;
+  color: $cofff;
+  display: block;
+  font-size: 14px;
   left: 60px;
+  padding: 10px 50px;
+  position: absolute;
+  text-align: center;
   transition: .3s;
+  width: 180px;
 }
 
 a.green-btn:hover {
   background: $cofff; /* Old browsers */
   border: 1px solid #000000;
-  padding: 10px 50px;
-  color: #95c800;
-  font-size: 14px;
-  box-shadow: none;
   border-radius: 4px;
-  display: block;
-  width: 180px;
-  text-align: center;
   bottom: 40px;
-  position: absolute;
+  box-shadow: none;
+  color: $co95c800;
+  display: block;
+  font-size: 14px;
   left: 60px;
+  padding: 10px 50px;
+  position: absolute;
+  text-align: center;
   text-decoration: none;
+  width: 180px;
 }
 
 .marker-info .arrow {
-  width: 0;
+  border: 14px solid $co_rgba255;
+  border-right-color: $co_rgba00084;
   height: 0;
-  position: absolute;
-  padding: 0 !important;
   left: -28px;
+  padding: 0 !important;
+  position: absolute;
   top: 150px !important;
-  border: 14px solid rgba(255, 0, 0, 0);
   top: 0;
-  border-right-color: rgba(0, 0, 0, 0.84);
+  width: 0;
 }
 
 .header {
   position: absolute;
+  transition: .3s;
   width: 100%;
   z-index: 9;
-  transition: .3s;
 }
 
 .header:hover {
@@ -807,16 +814,16 @@ a.green-btn:hover {
 .open-side {
   float: left;
   font-size: 21px;
-  padding: 28px 10px 0 20px;
   transition:0.3s;
+  padding: 28px 10px 0 20px;
 }
 
 .open-side:hover {
+  color: $co03aaac;
+  cursor: pointer;
   float: left;
   font-size: 21px;
-  color: $co03aaac;
   padding: 28px 10px 0 20px;
-  cursor: pointer;
   transition:0.3s;
 }
 
@@ -829,151 +836,151 @@ a.green-btn:hover {
 .header .weather {}
 
 .header .weather i {
-  font-size: 33px;
-  padding: 24px 0;
   display: block;
   float: left;
+  font-size: 33px;
+  padding: 24px 0;
 }
 
 .header .weather span {
+  display: block;
+  float: left;
   font-size: 36px;
   font-weight: 300;
-  float: left;
-  display: block;
   margin: 18px 10px;
 }
 
 .header .search {
-  margin: 27px 30px;
-  float: right;
   background: $cofff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  height: 33px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  float: right;
   font-size: 13px;
   font-style: italic;
-  width: 100%;
-  padding: 0 10px;
+  height: 33px;
+  margin: 27px 30px;
   max-width: 400px;
+  padding: 0 10px;
+  width: 100%;
 }
 .green-btn-header {
-  background: #95c800;
-  padding: 6px 50px;
-  color: $cofff;
-  font-size: 14px;
+  background: $co95c800;
   border-radius: 4px;
+  color: $cofff;
   display: block;
-  width: 180px;
-  text-align: center;
   float: right;
+  font-size: 14px;
   margin: 28px;
+  padding: 6px 50px;
+  text-align: center;
   transition: .3s;
+  width: 180px;
 }
 .green-btn-header:hover {
   background: #353535;
-  padding: 6px 50px;
-  color: $cofff;
-  font-size: 14px;
   border-radius: 4px;
+  color: $cofff;
   display: block;
-  width: 180px;
-  text-align: center;
   float: right;
+  font-size: 14px;
   margin: 28px;
+  padding: 6px 50px;
+  text-align: center;
   text-decoration: none;
   transition: .3s;
+  width: 180px;
 }
 
 .add-place {
-  position: fixed;
-  z-index: 999;
   background: rgba(0, 0, 0, 0.83);
-  width: 100%;
   height: 100%;
+  position: fixed;
   top: 0;
   transition: .3s linear;
+  width: 100%;
+  z-index: 999;
 }
 
 .place-form {
-  width: 300px;
   background: $cofff;
   border-radius: 4px;
-  margin: 0 auto;
-  top: 50%;
-  position: relative;
   height: 480px;
+  margin: 0 auto;
   margin-top: -265px;
+  position: relative;
+  top: 50%;
+  width: 300px;
 }
 
 .place-form h3 {
-  font-weight: 300;
-  text-align: center;
-  padding: 20px 0;
   display: block;
+  font-weight: 300;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .place-form h3 span {
+  background: $co95c800;
   display: block;
-  width: 60px;
   height: 1px;
-  background: #95C800;
   margin: 20px auto -16px auto;
+  width: 60px;
 }
 
 .place-form label {
-  font-size: 11px;
-  text-transform: uppercase;
   display: block;
-  padding: 0 30px;
+  font-size: 11px;
   margin: 20px 0 20px 0;
+  padding: 0 30px;
+  text-transform: uppercase;
 }
 
 .place-form label input {
-  display: block;
-  width: 100%;
-  height: 40px;
-  border-radius: 3px;
-  border: 1px solid #DDDDDD;
-  margin-top: 10px;
   background: #F9F9F9;
-  padding: 0 20px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  display: block;
   font-size: 16px;
   font-weight: 300;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .place-form label input:focus {
-  outline: none;
-  border: 1px solid #7CCB18;
   background: $cofff;
+  border: 1px solid #7CCB18;
   color: #7ccb18;
   font-size: 16px;
   font-weight: 300;
+  outline: none;
 }
 
 .place-form label select {
   display: block;
-  width: 100%;
-  margin-top: 10px;
   height: 30px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .place-form a {
-  width: 100%;
-  margin: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding: 20px;
+  margin: 0;
   margin-top: 18px;
+  padding: 20px;
+  width: 100%;
 }
 
 .place-form a:hover {
-  width: 100%;
-  margin: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  padding: 20px;
+  margin: 0;
   margin-top: 18px;
+  padding: 20px;
+  width: 100%;
 }
 
 .login-form {height: 400px;}
@@ -983,10 +990,10 @@ a.green-btn:hover {
 }
 
 .login-form a, .login-form a:hover {
-  margin: 10px 30px;
-  width: 240px;
   border-radius: 3px;
+  margin: 10px 30px;
   padding: 10px;
+  width: 240px;
 }
 
 .none {
@@ -995,33 +1002,31 @@ a.green-btn:hover {
 }
 
 .close-window {
-  display: block;
-  position: absolute;
-  top: -20px;
-  right: -20px;
   color: $cofff;
   cursor: pointer;
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: -20px;
 }
 
 .close-window:hover {
   color: #E51616;
 }
 
-.contant {}
-
 .contant .basic {
   background: $cofff;
   min-height: 100%;
   padding:0px;
-  position: relative;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .dark-bg {
   background: rgba(0, 0, 0, 0.85);
+  height: 100%;
   position: fixed;
   width: 100%;
-  height: 100%;
 }
 
 .head {
@@ -1032,26 +1037,26 @@ a.green-btn:hover {
 .head .logo {}
 
 .head .search {
-  margin: 0 30px 0;
-  float: right;
   background: $cofff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  height: 33px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  float: right;
   font-size: 13px;
   font-style: italic;
-  width: 100%;
-  padding: 0 10px;
+  height: 33px;
+  margin: 0 30px 0;
   max-width: 150px;
+  padding: 0 10px;
+  width: 100%;
 }
 
 .head .green-btn-header,
 .head .green-btn-header:hover {
+  margin: 0;
   max-width: 40px;
   padding: 6px 0;
   text-align: center;
-  margin: 0;
 }
 
 .menusha {
@@ -1059,11 +1064,11 @@ a.green-btn:hover {
 }
 
 .menusha-open {
+  color: #D0544B;
+  font-size: 21px;
+  left: 20px;
   position: absolute;
   top: 20px;
-  left: 20px;
-  font-size: 21px;
-  color: #D0544B;
   transition:0.3s;
 }
 
@@ -1071,31 +1076,31 @@ a.green-btn:hover {
 
 .header-section {
   background: url(../img/c-interior.png) no-repeat;
-  margin: 0 0;
   background-size: cover;
+  margin: 0 0;
   min-height: 255px;
   overflow: hidden;
   position: relative;
 }
 
 .header-section img {
+  border-radius: 3px;
   float: left;
   margin: 34px;
   width: 90px;
-  border-radius: 3px;
 }
 
 .header-section h1 {
   color: $cofff;
   font-weight: 300;
-  padding-top: 20px;
   padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .header-section ul {}
 .header-section ul li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
   margin: 0 10px 0 0;
 }
 
@@ -1110,37 +1115,37 @@ a.green-btn:hover {
 
 .dial {
   font-size: 16px !important;
-  margin-top: 16px !important;
   font-weight: 100 !important;
+  margin-top: 16px !important;
 }
 
 .circle {
-float: left;
+  float: left;
   margin-right: 20px;
 }
 
 .dia {
-  padding: 18px 30px;
   background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 9%, rgba(0,0,0,0.5) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(9%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
   background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 9%,rgba(0,0,0,0.5) 100%);
   background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 9%,rgba(0,0,0,0.5) 100%);
   background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 9%,rgba(0,0,0,0.5) 100%);
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 9%,rgba(0,0,0,0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( start  Colorstr='#00000000', end  Colorstr='#80000000',GradientType=0 );
-  overflow: hidden;
-  height: 89px;
-  position: absolute;
   bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient( start  Colorstr='#00000000', end  Colorstr='#80000000',GradientType=0 );
+  height: 89px;
+  overflow: hidden;
+  padding: 18px 30px;
+  position: absolute;
   width: 100%;
 }
 
 .diagramms span {
   color: $cofff;
   display: block;
-  padding-top: 15px;
   font-size: 17px;
   font-weight: 300;
+  padding-top: 15px;
 }
 
 .circle input:focus {
@@ -1148,46 +1153,46 @@ float: left;
 }
 
 .icon-descr-block {
-  overflow: hidden;
   border-bottom: 1px solid #E8E8E8;
+  overflow: hidden;
 }
 
 .icon-descr-block .cols {
-  width: 50%;
   float: left;
   padding: 16px;
+  width: 50%;
 }
 
 .icon-descr-block .cols .icons {
-  position: relative;
   float: left;
-  width: 30%;
   padding: 20px;
+  position: relative;
+  width: 30%;
 }
 
 .icon-descr-block .cols .icons .ic {
-  display: block;
-  padding: 18px 24px;
   border: 2px solid;
-  width: 76px;
-  height: 76px;
   border-radius: 150px;
+  display: block;
   font-size: 24px;
+  height: 76px;
+  padding: 18px 24px;
+  width: 76px;
 }
 
 .icon-descr-block .cols .icons .ic i {}
 
 .icon-descr-block .cols .icons .num {
-  display: block;
-  width: 70px;
-  position: absolute;
-  padding: 3px 20px;
-  font-size: 12px;
-  font-weight: bold;
   border-radius: 3px;
   bottom: 8px;
-  left: 23px;
   color: $cofff;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  left: 23px;
+  padding: 3px 20px;
+  position: absolute;
+  width: 70px;
 }
 .icon-descr-block .bubble {
   float: left;
@@ -1196,23 +1201,23 @@ float: left;
 
 .icon-descr-block .bubble div {
   background: #f3f3f3;
-  padding: 15px;
   border-radius: 3px;
-  margin: 30px 30px;
   color: #5a5a5a;
   font-weight: 300;
-  position: relative;
   line-height: 24px;
+  margin: 30px 30px;
+  padding: 15px;
+  position: relative;
 }
 
 .icon-descr-block .bubble div span {
-  width: 0;
-  height: 0;
-  position: absolute;
-  border: 10px solid rgba(0, 0, 0, 0);
+  border: 10px solid $black;
   border-right: 10px solid #F3F3F3;
-  left: -20px;
+  height: 0;
+  left: -20 px;
+  position: absolute;
   top: 42px;
+  width: 0;
 }
 
 .id-blue .num {
@@ -1240,9 +1245,9 @@ float: left;
 }
 
 .phone-email {
-  padding: 14px 30px;
   border-bottom: 1px solid #e8e8e8;
   min-height: 50px;
+  padding: 14px 30px;
 }
 .phone-email span {
   display: block;
@@ -1250,20 +1255,20 @@ float: left;
   margin: 0 40px 0 0;
 }
 .phone-email span i {
-  display: inline-block;
-  margin-right: 12px;
-  font-size: 13px;
   color: #A8A8A8;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 12px;
 }
 
 .features-block {
-  overflow: overlay;
   min-height: 162px;
+  overflow: overlay;
 }
 
 .features-block div {
-  width: 50%;
   float: left;
+  width: 50%;
 }
 
 .features-block div ul {
@@ -1279,13 +1284,13 @@ float: left;
 
 .share-block {
   background: #f3f3f3;
-  overflow: overlay;
   min-height: 55px;
+  overflow: overlay;
 }
 
 .share-block div {
-  width: 50%;
   float: left;
+  width: 50%;
 }
 
 .share-block div a {
@@ -1294,30 +1299,27 @@ float: left;
 }
 
 .share-block div div {
-  width: 50%;
-  float: left;
-  padding: 10px 30px;
-  font-size: 13px;
   color: #6f6f6f;
+  float: left;
+  font-size: 13px;
+  padding: 10px 30px;
+  width: 50%;
 }
 
 .share-block div div span {
+  color: #4A4A4A;
   display: block;
   font-weight: bold;
-  color: #4A4A4A;
 }
-
-.check-in {}
 
 .check-in div {
   padding: 30px;
 }
 
-.check-in div a {}
 .check-in div a:hover {}
 .check-in div .users-group {
-  padding: 20px 0;
   margin: 0 -10px;
+  padding: 20px 0;
 }
 
 .check-in div .users-group a {
@@ -1326,8 +1328,8 @@ float: left;
 }
 
 .check-in div .users-group a img {
-  width: 45px;
   border-radius: 3px;
+  width: 45px;
 }
 
 .flickr-photo h4 {
@@ -1344,13 +1346,13 @@ float: left;
 }
 
 .flickr-photo ul li {
-  list-style: none;
+  border-radius: 3px;
   display: inline-block;
+  height: 140px;
+  list-style: none;
   margin: 13px;
   overflow: hidden;
   width: 140px;
-  border-radius: 3px;
-  height: 140px;
 }
 
 .flickr-photo ul li img {
@@ -1363,23 +1365,23 @@ float: left;
 }
 
 .user-avatars {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  overflow: hidden;
   display: block;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+  width: 45px;
 }
 
 .user-go {
-  position: absolute;
-  width: 45px;
   background: rgba(151, 201, 0, 0.81);
+  border-radius: 3px;
+  bottom: -65px;
   height: 45px;
   overflow: hidden;
   padding: 13px 17px !important;
-  border-radius: 3px;
-  bottom: -65px;
+  position: absolute;
   transition:0.3s;
+  width: 45px;
 }
 
 .user-go i {
@@ -1391,17 +1393,15 @@ float: left;
   transition:0.3s;
 }
 
-.reviews {}
-
 .reviews h4 {
-  padding: 40px 30px 0 30px;
   font-size: 16px;
   margin: 0;
+  padding: 40px 30px 0 30px;
 }
 
 .reviews .rev {
-  padding: 30px;
   border-bottom: 1px solid #E4E4E4;
+  padding: 30px;
   transition:0.3s;
 }
 
@@ -1413,13 +1413,13 @@ float: left;
 .reviews .rev .user {
   float: left;
   margin: 0 20px 0 0;
-  padding-top: 4px;
   overflow: hidden;
+  padding-top: 4px;
 }
 
 .reviews .rev .user img{
-  width: 45px;
   border-radius: 3px;
+  width: 45px;
 }
 
 .reviews .rev .texts {
@@ -1434,8 +1434,8 @@ float: left;
   padding-left: 20px;
 }
 .reviews .rev .text-rev {
-  padding-top: 10px;
   color: #606060;
+  padding-top: 10px;
 }
 
 .add-comment h4 {
@@ -1447,13 +1447,13 @@ float: left;
 }
 
 .add-comment   textarea {
-  width: 100%;
-  border: 0;
   background: #f1f1f1;
+  border: 0;
   border-radius: 3px;
-  resize: vertical;
   min-height: 100px;
   padding: 15px;
+  resize: vertical;
+  width: 100%;
 }
 
 .add-comment textarea:focus {
@@ -1465,18 +1465,16 @@ float: left;
 }
 
 .map-place {
-  width: 100%;
+  border-radius: 6px;
   height: 254px;
   margin-top: 72px;
-  border-radius: 6px;
+  width: 100%;
 }
 
-.similar {}
-
 .similar div {
-  overflow: auto;
-  margin: 20px 0;
   color: $cofff;
+  margin: 20px 0;
+  overflow: auto;
 }
 
 .similar a {
@@ -1488,46 +1486,46 @@ float: left;
 }
 
 .similar h3 {
+  color: $cofff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: $cofff;
   padding: 25px 0 10px;
 }
 
 .similar img {
-width: 45px;
-border-radius: 3px;
-display: block;
-float: left;
+  border-radius: 3px;
+  display: block;
+  float: left;
   margin-right: 10px;
+  width: 45px;
 }
 
 .similar i {
-font-size: 10px;
-padding-right: 5px;
   color: $cofff;
+  font-size: 10px;
+  padding-right: 5px;
 }
 
 .address {
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 15px;
-  margin-top: 15px;
   border-radius: 3px;
   color: $cofff;
+  margin-top: 15px;
+  padding: 10px 15px;
 }
 
 .mobile-place {
-padding: 0 30px 30px;
-overflow: auto;
-display: none;
+  display: none;
+  overflow: auto;
+  padding: 0 30px 30px;
 }
 
 .mobile-place .similar {}
 
 .mobile-place .similar div {
   color: #BABABA;
-  width: 50%;
   float: left;
+  width: 50%;
 }
 
 .mobile-place .similar a {
@@ -1539,11 +1537,11 @@ display: none;
 }
 
 .mobile-place .similar img {
-  width: 45px;
   border-radius: 3px;
   display: block;
   float: left;
   margin-right: 10px;
+  width: 45px;
 }
 
 .mobile-place .similar i {
@@ -1552,10 +1550,10 @@ display: none;
 
 .mobile-place .address {
   background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  margin-top: 15px;
   border-radius: 3px;
   color: $cofff;
+  margin-top: 15px;
+  padding: 10px 15px;
 }
 
 .vp h1{
@@ -1563,15 +1561,15 @@ padding: 0 30px 30px;
 }
 
 .map-user-visits {
-  width: 100%;
   height: 300px;
+  width: 100%;
 }
 
 .marker-visit {
   background: rgba(0, 0, 0, 0.83);
   border-radius: 3px;
-  width: auto;
   position: fixed;
+  width: auto;
 }
 
 .marker-visit .info {
@@ -1579,15 +1577,15 @@ padding: 0 30px 30px;
 }
 
 .marker-visit .info span {
-  width: 0;
-  height: 0;
-  position: absolute;
-  padding: 0 !important;
-  left: -16px;
-  top: 12px !important;
-  border: 8px solid rgba(255, 0, 0, 0);
-  top: 0;
+  border: 8px solid $co_rgba255;
   border-right-color: rgba(0, 0, 0, 0.83);
+  height: 0;
+  left: -16px;
+  padding: 0 !important;
+  position: absolute;
+  top: 12px !important;
+  top: 0;
+  width: 0;
 }
 
 .marker-visit .info a {
@@ -1595,8 +1593,8 @@ padding: 0 30px 30px;
 }
 
 .marker-visit .info a:hover {
-  font-size: 14px;
   color: $cofff;
+  font-size: 14px;
 }
 
 .user-avatar {
@@ -1605,23 +1603,23 @@ padding: 0 30px 30px;
 }
 
 .user-avatar img {
-  width: 100%;
   border-radius: 3px;
+  width: 100%;
 }
 
 .user-avatar span {
-  position: absolute;
   background: rgba(0, 0, 0, 0.71);
-  display: block;
-  bottom: 0;
-  width: 100%;
-  padding: 8px 15px;
-  font-size: 28px;
-  font-family: roboto;
-  font-weight: 300;
-  color: $cofff;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  bottom: 0;
+  color: $cofff;
+  display: block;
+  font-family: roboto;
+  font-size: 28px;
+  font-weight: 300;
+  padding: 8px 15px;
+  position: absolute;
+  width: 100%;
 }
 
 .user-friends {}
@@ -1637,17 +1635,17 @@ padding: 0 30px 30px;
 }
 
 .user-friends .users-group a {
-  width: 45px;
   display: block;
   float: left;
   height: 45px;
-  padding: 0;
   margin: 9px;
+  padding: 0;
+  width: 45px;
 }
 
 .user-friends .users-group a img {
-  width: 100%;
   border-radius: 3px;
+  width: 100%;
 }
 
 .user-btn {
@@ -1678,42 +1676,42 @@ padding: 0 30px 30px;
 }
 
 .place-gr-cont .pg {
-  width: 50%;
-  padding: 30px;
-  min-height: 300px;
-  float: left;
   background-size: cover !important;
-  position: relative;
+  float: left;
   max-height: 300px;
+  min-height: 300px;
   overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 50%;
 }
 
 .place-gr-cont .pg img{
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
 }
 
 .place-gr-cont .pg h2 {
-  font-size: 26px;
   color: $cofff;
+  font-size: 26px;
   margin-top: 0;
 }
 
 .place-gr-cont .pg h2 span {
-  width: 80px;
-  height: 1px;
   display: block;
+  height: 1px;
   margin: 20px 0;
+  width: 80px;
 }
 
 .place-gr-cont .pg span {
+  color: $cofff;
   font-family: roboto;
   font-size: 16px;
-  color: $cofff;
-  line-height: 26px;
   font-weight: 300;
+  line-height: 26px;
 }
 
 .place-gr-cont .pg.style-one {
@@ -1721,7 +1719,7 @@ padding: 0 30px 30px;
 }
 
 .place-gr-cont .pg.style-two {
-  background: #95C800;
+  background: $co95c800;
   transition: .3s;
 }
 
@@ -1734,7 +1732,7 @@ padding: 0 30px 30px;
 }
 
 .place-gr-cont .pg.style-three h2 span, .place-gr-cont .pg.style-one h2 span {
-  background: #95C800;
+  background: $co95c800;
 }
 
 .place-gr-cont .pg.style-one.bg-one {
@@ -1753,18 +1751,18 @@ padding: 0 30px 30px;
 }
 
 .place-gr-cont .pg:hover {
-cursor: pointer;
   background: $cofff !important;
+  cursor: pointer;
   transition:0.3s;
 }
 
 .place-gr-cont .pg:hover h2 {
-  color: #95C800;
+  color: $co95c800;
   transition: .3s;
 }
 
 .place-gr-cont .pg:hover h2 span {
-  background: #95C800;
+  background: $co95c800;
   transition: .3s;
 }
 
@@ -1774,22 +1772,22 @@ cursor: pointer;
 }
 
 .more-btn {
-  padding: 10px 20px;
-  display: block;
-  width: 150px;
-  text-align: center;
   border: 2px solid #CBCBCB;
-  margin: 30px auto;
   border-radius: 3px;
-  color: #CBCBCB;
   clear: both;
+  color: #CBCBCB;
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  text-align: center;
+  width: 150px;
 }
 
 .more-btn:hover {
-  text-decoration: none;
-  background: #95C800;
-  border-color: #95C800;
+  background: $co95c800;
+  border-color: $co95c800;
   color: $cofff;
+  text-decoration: none;
 }
 
 .pg:hover .dar-bg-frid {
@@ -1803,9 +1801,9 @@ cursor: pointer;
     list-style: none;
 
     a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.42);
       display: block;
       padding: 12px 15px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.42);
 
       i {
         margin-right: 15px;
@@ -1814,15 +1812,15 @@ cursor: pointer;
 
     a:hover {
       background: #E73931;
-      color: $cofff;
       border-bottom: 1px solid #E73931;
+      color: $cofff;
     }
   }
 }
 
 .tag {
-  padding: 15px;
   margin-top: 30px;
+  padding: 15px;
 
   h3 {
     color: $cofff;
@@ -1833,15 +1831,15 @@ cursor: pointer;
     padding: 0;
 
     li {
-      list-style: none;
       display: inline-block;
+      list-style: none;
       margin: 0 1px 7px;
 
       a {
-        padding: 6px 14px;
         border: 1px solid #342C43;
-        display: block;
         border-radius: 40px;
+        display: block;
+        padding: 6px 14px;
       }
 
       a:hover {
@@ -1854,16 +1852,16 @@ cursor: pointer;
 
 .dar-bg-frid {
   background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 2;
 }
 .p-cont {
-z-index: 99;
-position: relative;
+  position: relative;
+  z-index: 99;
 }
 
 .place-li-cont {
@@ -1879,9 +1877,9 @@ position: relative;
 
     div {
       h2 {
-        font-weight: 400;
         color: $co333;
         font-size: 26px;
+        font-weight: 400;
         max-width: 50%;
 
         a {
@@ -1889,17 +1887,17 @@ position: relative;
         }
 
         a:hover {
-          transition:0.3s;
           color:$co333;
           text-decoration: none;
+          transition:0.3s;
         }
 
         span {
-          width: 80px;
-          height: 1px;
+          background: $co95c800;
           display: block;
+          height: 1px;
           margin: 20px 0;
-          background: #95C800;
+          width: 80px;
         }
       }
 
@@ -1908,20 +1906,20 @@ position: relative;
       }
 
       span {
+        color: $co333;
+        display: block;
         font-family: roboto;
         font-size: 16px;
-        color: $co333;
         font-weight: 300;
         line-height: 26px;
-        display: block;
         margin-bottom: 14px;
       }
     }
   }
 
   .con {
-    border-top: 1px solid $coe5e5e5;
     border-bottom: 1px solid $coe5e5e5;
+    border-top: 1px solid $coe5e5e5;
     height: 200px;
     padding-left: 220px;
   }
@@ -1935,14 +1933,14 @@ position: relative;
 
 .list-dia {
   position: absolute;
-  top: 20px;
   right: 0;
+  top: 20px;
   width: 40%;
 
   .ld {
-    width: 100px;
     float: right;
     margin: 0 10px;
+    width: 100px;
   }
 
   .circle {
@@ -1956,20 +1954,20 @@ position: relative;
 }
 
 .blog-cat {
-  padding: 0 30px;
   margin-bottom: 40px;
   margin-top: 30px;
+  padding: 0 30px;
 
   li {
-    list-style: none;
     display: inline-block;
+    list-style: none;
     padding: 10px 10px 0 0;
 
     a {
       border: 1px solid #E2E2E2;
-      padding: 10px 20px;
       border-radius: 50px;
       display: inline-block;
+      padding: 10px 20px;
 
       i {
         padding-right: 14px;
@@ -1985,8 +1983,6 @@ position: relative;
   max-width: 700px;
 }
 
-.post {}
-
 .post.p-style-one {
   background: url('../img/blog-post-bg.jpg');
   padding: 90px;
@@ -2000,30 +1996,28 @@ position: relative;
     margin-top: 0;
 
     span {
+      background: $co95c800;
       display: block;
-      width: 100px;
       height: 1px;
-      background: #95C800;
       margin: 20px 0;
+      width: 100px;
     }
   }
 
-  .p-text {}
-
   .p-footer {
     ul {
-      padding: 0;
       margin-top: 18px;
+      padding: 0;
 
       li {
+        display: inline-block;
         list-style: none;
         padding: 10px 20px 0 0;
-        display: inline-block;
 
         a i {
           color: #C5C5C5;
-          font-size: 13px;
           display: inline-block;
+          font-size: 13px;
           margin: 0 8px 0 0;
         }
       }
@@ -2040,26 +2034,26 @@ position: relative;
 
 .post.p-style-two {
   background: url('../img/blog-post-two-bg.jpg');
-  padding: 0;
-  background-size: cover;
   background-position: right top;
+  background-size: cover;
+  padding: 0;
 
   .post-info {
     background: $cofff;
     padding: 30px;
-    width: 50%;
     position: relative;
+    width: 50%;
 
     .arrow {
-      width: 0;
+      border: 14px solid $co_rgba255;
+      border-left-color: $shadow;
       height: 0;
-      position: absolute;
-      padding: 0 !important;
-      right: -28px;
       margin-top: 50px;
-      border: 14px solid rgba(255, 0, 0, 0);
+      padding: 0 !important;
+      position: absolute;
+      right: -28px;
       top: 0;
-      border-left-color: rgba(255, 255, 255, 1);
+      width: 0;
     }
   }
 
@@ -2067,30 +2061,28 @@ position: relative;
     margin-top: 0;
 
     span {
+      background: $co95c800;
       display: block;
-      width: 100px;
       height: 1px;
-      background: #95C800;
       margin: 20px 0;
+      width: 100px;
     }
   }
 
-  .p-text {}
-
   .p-footer {
     ul {
-      padding: 0;
       margin-top: 18px;
+      padding: 0;
 
       li {
+        display: inline-block;
         list-style: none;
         padding: 10px 20px 0 0;
-        display: inline-block;
 
         a i {
           color: #C5C5C5;
-          font-size: 13px;
           display: inline-block;
+          font-size: 13px;
           margin: 0 8px 0 0;
         }
       }
@@ -2098,13 +2090,10 @@ position: relative;
   }
 }
 
-/*Post style three*/
-.post {}
-
 .post.p-style-three {
   background: url('../img/blog-post-two-bg.jpg');
-  padding: 0;
   background-size: cover;
+  padding: 0;
 
   .post-info {
     background: $cofff;
@@ -2112,15 +2101,15 @@ position: relative;
     position: relative;
 
     .arrow {
-      width: 0;
+      border: 14px solid $co_rgba255;
+      border-left-color: $shadow;
       height: 0;
-      position: absolute;
-      padding: 0 !important;
-      right: -28px;
       margin-top: 50px;
-      border: 14px solid rgba(255, 0, 0, 0);
+      padding: 0 !important;
+      position: absolute;
+      right: -28px;
       top: 0;
-      border-left-color: rgba(255, 255, 255, 1);
+      width: 0;
     }
   }
 
@@ -2128,30 +2117,28 @@ position: relative;
     margin-top: 0;
 
     span {
+      background: $co95c800;
       display: block;
-      width: 100px;
       height: 1px;
-      background: #95C800;
       margin: 20px 0;
+      width: 100px;
     }
   }
 
-  .p-text {}
-
   .p-footer {
     ul {
-      padding: 0;
       margin-top: 18px;
+      padding: 0;
 
       li {
+        display: inline-block;
         list-style: none;
         padding: 10px 20px 0 0;
-        display: inline-block;
 
         a i {
           color: #C5C5C5;
-          font-size: 13px;
           display: inline-block;
+          font-size: 13px;
           margin: 0 8px 0 0;
         }
       }
@@ -2160,72 +2147,70 @@ position: relative;
 }
 
 .post.p-style-one.open {
-padding-bottom: 0;
-min-height: 300px;
-position: relative;
+  min-height: 300px;
+  padding-bottom: 0;
+  position: relative;
 }
 
 .open.post-info {
-  padding-bottom: 0 !important;
   margin-bottom: 0;
   margin-top: 136px;
+  padding-bottom: 0 !important;
 
   h1 {
-    padding: 0 10px;
-    margin: 0;
     font-size: 44px;
     line-height: 60px;
+    margin: 0;
+    padding: 0 10px;
 
     span {
+      background: $co95c800;
       display: block;
-      width: 100px;
       height: 1px;
-      background: #95C800;
       margin: 20px 0;
+      width: 100px;
     }
   }
 }
 
 .post-content {
-  padding: 10px 120px 30px;
-  font-size: 16px;
+  color: #383838;
   font-family: roboto;
+  font-size: 16px;
   font-weight: 300;
   line-height: 32px;
-  color: #383838;
+  padding: 10px 120px 30px;
 }
 
 .Subscribe {
   background: url('../img/blog-post-bg.jpg');
-  padding: 10px;
   margin: 40px 0;
+  padding: 10px;
 
   div {
     border:7px solid $cofff;
     padding: 20px;
 
     h2 {
+      color: $cofff;
       margin: 0;
       text-align: center;
-      color: $cofff;
     }
 
     form {
-      width: 500px;
       margin: 0 auto;
-      margin-top: 20px;
       margin-bottom: 10px;
+      margin-top: 20px;
+      width: 500px;
 
       input {
         border: 0;
         border-radius: 3px;
-        margin-right: 10px;
         font-size: 14px;
-        padding: 0 10px;
+        margin-right: 10px;
         min-width: 370px;
+        padding: 0 10px;
       }
-
-      button {}
     }
   }
 }
@@ -2234,15 +2219,15 @@ position: relative;
     padding: 0;
 
     li {
-      list-style: none;
       display: inline-block;
+      list-style: none;
       padding: 0 30px 0 0;
 
       a {
         i {
+          color: #BEBEBE;
           font-size: 13px;
           padding-right: 10px;
-          color: #BEBEBE;
         }
       }
     }
@@ -2251,15 +2236,15 @@ position: relative;
 
 .author {
   background: #f1f1f1;
-  padding: 20px 120px;
   overflow: hidden;
+  padding: 20px 120px;
 
   img {
-    float: left;
-    display: block;
     border-radius: 100px;
-    width: 95px;
+    display: block;
+    float: left;
     margin-right: 30px;
+    width: 95px;
   }
 
   a {
@@ -2268,8 +2253,6 @@ position: relative;
     font-weight: 300;
     margin-bottom: 10px;
   }
-
-  span {}
 }
 
 .reviews.open {
@@ -2295,27 +2278,25 @@ position: relative;
   background-size: cover;
 
   div {
-    max-width: 760px;
     margin: 100px auto;
+    max-width: 760px;
     text-align: center;
     width: 80%;
 
     img {
-      width: 100%;
       max-width: 731px;
+      width: 100%;
     }
 
     span {
-      font-size: 22px;
       color: $cofff;
-      font-weight: 300;
-      font-family: roboto;
       display: block;
+      font-family: roboto;
+      font-size: 22px;
+      font-weight: 300;
       margin-bottom: 40px;
       margin-top: -50px;
     }
-
-    a {}
   }
 }
 
