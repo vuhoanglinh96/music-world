@@ -7,10 +7,13 @@ exclude:
 linters:
   BorderZero:
     enabled: false
-
   Indentation:
     exclude:
       - 'path/to/file.scss'
       - 'path/to/directory/**'
     severity: warning
     width: 2
+  SelectorDepth:
+    max_depth: 5
+  NestingDepth:
+    max_depth: 5
