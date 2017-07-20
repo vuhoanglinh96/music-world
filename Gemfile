@@ -1,11 +1,3 @@
-ruby "2.4.0"
-source "https://rubygems.org"
-
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
 gem "rails", "~> 5.0.4"
 gem "bcrypt", "3.1.11"
 gem "faker", "1.7.3"
