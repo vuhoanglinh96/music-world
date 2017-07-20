@@ -21,25 +21,18 @@ $(document).ready(function () {
   //////Autorization//////
   $('#login').on('click', function () {
       "use strict";
-<<<<<<< HEAD
     $('.modal-backdrop').remove();
-=======
-          $('.modal-backdrop').remove();
->>>>>>> 166cf27e99f7630a50a94a4fd3620db457a81588
     $('#autorized').removeClass("none");
     $('#pushy').removeClass("pushy-open");
     $('#pushy').addClass("pushy-left");
     $('body').removeClass('pushy-active');
   })
-<<<<<<< HEAD
 
   $('.white-border').on('click', function () {
       "use strict";
     $('#autorized').removeClass("none");
   })
 
-=======
->>>>>>> 166cf27e99f7630a50a94a4fd3620db457a81588
   $('.log_btn').on('click', function () {
       "use strict";
     $('#autorized').removeClass("none");

@@ -13,4 +13,7 @@ linters:
       - 'path/to/directory/**'
     severity: warning
     width: 2
-
+  SelectorDepth:
+    max_depth: 5
+  NestingDepth:
+    max_depth: 5
