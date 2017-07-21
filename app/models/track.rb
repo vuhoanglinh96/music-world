@@ -10,4 +10,5 @@ class Track < ApplicationRecord
   validates :genre, presence: true
   validates :description, presence: true, allow_nil: true
   validates :image, presence: true, allow_nil: true
+
 end
