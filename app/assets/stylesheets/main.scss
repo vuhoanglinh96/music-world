@@ -948,8 +948,63 @@ a:hover {
         height: 30px;
         margin-top: 10px;
         width: 100%;
-        }
+      }
     }
+
+    textarea {
+      background: $cof9f9f9;
+      border: 1px solid $coddd;
+      border-radius: 3px;
+      display: block;
+      font-size: 16px;
+      font-weight: 300;
+      height: 40px;
+      margin-top: 10px;
+      padding: 0 20px;
+      width: 100%;
+
+      &:focus {
+        background: $cofff;
+        border: 1px solid $co7ccb18;
+        color: $co7ccb18;
+        font-size: 16px;
+        font-weight: 300;
+        outline: none;
+      }
+
+      select {
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
+    select {
+      display: block;
+      height: 40px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .hidden-file {
+      display: none;
+    }
+  }
+
+  .upload-btn {
+    background: $cof9f9f9;
+    border: 1px solid $coccc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 27px;
+    margin: 0 30px;
+    padding: 6px 12px;
+    text-align: center;
+    width: 240px;
   }
 
   a {
@@ -968,6 +1023,69 @@ a:hover {
       padding: 20px;
       width: 100%;
     }
+  }
+
+  input {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: 0;
+    margin-top: 18px;
+    padding: 20px;
+    width: 100%;
+
+    &:hover {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin: 0;
+      margin-top: 18px;
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.row {
+  label {
+    display: block;
+
+    input,
+    textarea,
+    select,
+    .uneditable-input {
+      background: $cof9f9f9;
+      border: 1px solid $cobbb;
+      border-radius: 3px;
+      box-sizing: border-box;
+      display: block;
+      font-weight: 400;
+      height: 40px;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+
+  .hidden-file {
+    display: none;
+  }
+
+  .upload-btn {
+    background: $cof9f9f9;
+    border: 1px solid $coccc;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 27px;
+    padding: 6px 12px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .green-btn-header {
+    box-sizing: border-box;
+    margin: 15px auto;
+    width: 100%;
   }
 }
 

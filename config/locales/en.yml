@@ -20,3 +20,6 @@ en:
       emerging and major artists around the world."
       getstart: "Get started"
 
+  errors:
+    messages:
+      extension_whitelist_error: "accept only mp3, flac and aac extension"

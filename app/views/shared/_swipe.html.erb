@@ -20,23 +20,35 @@
 <div class="add-place none" id="pl">
 <div class="place-form">
 <i class="fa fa-times close-window" id="close"></i>
-<h3>Add new place<span></span></h3>
-<form>
-<label>Place name:<input type="text"></label>
-<label>latitude:<input type="text"></label>
-<label>longitude:<input type="text"></label>
-<label>Categori:
-<select>
-<option value="Cafe">Cafe</option>
-<option value="Bar">Bar</option>
-<option value="Cinema">Cinema</option>
-<option value="Shop">Shop</option>
-<option value="Club">Club</option>
-<option value="Bank">Bank</option>
-</select>
-</label>
-<a href="#" class="green-btn-header" id="add">Add</a>
-</form>
+<h3>Upload your track<span></span></h3>
+  <%= form_for @track do |t| %>
+  <%= t.label :title do %>
+    Title:
+    <%= t.text_area :title %>
+  <% end %>
+
+  <%= t.label :description do %>
+    Description:
+    <%= t.text_area :description %>
+  <% end %>
+
+  <%= t.label :genre do %>
+    Genre:
+    <%= t.select :genre_id, Genre.all.collect {|g| [g.name, g.id]} %>
+  <% end %>
+
+  <div class="upload-btn btn btn-default"
+    onclick="document.getElementById('selectedFile').click();">
+    Upload track
+  </div>
+  <%= t.label :song, class: "file-upload" do %>
+    <%= t.file_field :song, class: "hidden-file", id: "selectedFile" %>
+  <% end %>
+
+  <%= t.hidden_field :user_id, value: 1 %>
+
+  <%= t.submit :upload, class: "green-btn-header" %>
+<% end %>
 </div>
 </div>
 
