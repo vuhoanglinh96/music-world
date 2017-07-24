@@ -19,7 +19,8 @@
       <%= link_to t(".getstart"), home_path, class: "green" %>
       <button class="white-border" id="login">Log in</button>
     </div>
-    <%= render "shared/login_form" %>
+    
+    <%= render "devise/sessions/new" %>
   </div>
   <%= render "animation_image" %>
   <div class="bgg"></div>

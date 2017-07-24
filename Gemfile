@@ -1,3 +1,11 @@
+ruby "2.4.0"
+source "https://rubygems.org"
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
 gem "rails", "~> 5.0.4"
 gem "bcrypt", "3.1.11"
 gem "faker", "1.7.3"
@@ -18,6 +26,11 @@ gem "rubocop", require: false
 gem "rubocop-checkstyle_formatter", require: false
 gem "eslint-rails"
 gem "therubyracer", platforms: :ruby
+gem "devise"
+gem "omniauth", "~> 1.3"
+gem "oauth2"
+gem "omniauth-oauth2"
+gem "rdoc"
 
 group :development, :test do
   gem "sqlite3"
