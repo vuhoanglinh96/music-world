@@ -3,7 +3,9 @@ class StaticPagesController < ApplicationController
 
   def index; end
 
-  def home; end
+  def home
+    @track_index = Track.all
+  end
 
   def track; end
 

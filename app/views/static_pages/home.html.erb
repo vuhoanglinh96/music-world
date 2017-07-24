@@ -17,53 +17,47 @@
 <p class="lead">Let's enjoy the rhythm</p>
 <!--Blog category-->
 <ul class="blog-cat">
-<li><a href="#" class="shop">
-  <i class="fa fa-shopping-cart"></i><%= t "pop" %></a></li>
-<li><a href="#" class="cinema">
-  <i class="fa fa-film"></i><%= t "rock" %></a></li>
-<li><a href="#" class="club">
-  <i class="fa fa-beer"></i><%= t "edm" %></a></li>
-<li><a href="#" class="cafe">
-  <i class="fa fa-cutlery"></i><%= t "rb" %></a></li>
-<li><a href="#" class="sport">
-  <i class="fa fa-futbol-o"></i><%= t "dance" %></a></li>
-<li><a href="#" class="port">
-  <i class="fa fa-life-ring"></i><%= t "classical" %></a></li>
-<li><a href="#" class="bank">
-  <i class="fa fa-university"></i><%= t "requiem" %></a></li>
-<li><a href="#" class="post">
-  <i class="fa fa-envelope-o"></i><%= t "blues" %></a></li>
-<li><a href="#" class="showplace">
-  <i class="fa fa-eye"></i><%= t "cover" %></a></li>
-<li><a href="#" class="park">
-  <i class="fa fa-leaf"></i><%= t "ballad" %></a></li>
+  <% @genres.each do |g| %>
+    <li>
+      <a href="#" class="showplace">
+        <i class="fa fa-eye"></i><%= g.name %>
+      </a>
+    </li>
+  <% end %>
 </ul>
 
-<!--place style list-->
-<div class="pg style-list">
-<!--features-->
-<img src="img/pl3.jpg" alt="">
-<div class="con">
-<h2>
-  <%= link_to "Aloha", track_path %>
-  <h4><%= link_to "Cool", artist_path %></h4>
-</h2>
-<span>Để trình phát nhạc ở đây</span>
-<a href="02.html" class="comm"><i class="fa fa-comments"></i>234 Comments</a>
-</div>
-</div>
-<!--place style list-->
-<div class="pg style-list">
-<!--features-->
-<img src="img/pl2.jpg" alt="">
-<div class="con">
-<h2>
-  <%= link_to "Tiến quân ca", track_path %>
-  <h4><%= link_to "Trọng tấn", artist_path %></h4>
-</h2>
-<span>Để trình phát nhạc ở đây</span>
-<a href="02.html" class="comm"><i class="fa fa-comments"></i>234 Comments</a>
-</div>
+<div id="audio-players">
+<% @track_index.each do |track| %>
+  <div class="pg style-list">
+  <!--features-->
+  <img src="http://i.imgur.com/XaZCBtV.png" alt="">
+  <div class="con">
+  <h2>
+    <%= link_to track.title, track_path %>
+    <h4><%= link_to "Cool", artist_path %></h4>
+  </h2>
+  <span>
+    <audio id="audio-<%= track.id %>" class="audio" preload="true">
+      <source src="<%= track.song %>">
+      <source src="<%= track.song %>">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="wrapper">
+    <div id="audioplayer-<%= track.id %>" class="audioplayer">
+      <button id="playbutton-<%= track.id %>" class="playbutton play"></button>
+      <span id="start-time-<%=track.id%>" class="start-time"></span>
+      <span id="timeline-<%=track.id%>" class="timeline">
+        <div class="music-line"></div>
+        <div id="playhead-<%=track.id%>" class="playhead"></div>
+      </span>
+      <span id="stop-time-<%=track.id%>" class="stop-time"></span>
+      </div>
+    </div>
+  </span>
+  <a href="02.html" class="comm"><i class="fa fa-comments"></i>234 Comments</a>
+  </div>
+  </div>
+<% end %>
 </div>
 
 </div>
