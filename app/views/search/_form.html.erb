@@ -1,0 +1,10 @@
+<div class="search-promo">
+  <div class="input-group">
+    <%= form_for :term, url: search_path, method: :get do |form| %>
+      <p>
+        <%= text_field_tag :term, params[:term] %>
+        <%= submit_tag "Search", name: nil %>
+      </p>
+    <%end%>
+  </div>
+</div>

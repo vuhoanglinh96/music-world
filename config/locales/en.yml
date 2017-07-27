@@ -23,3 +23,6 @@ en:
   errors:
     messages:
       extension_whitelist_error: "accept only mp3, flac and aac extension"
+  tracks:
+    index:
+      all-track: "All tracks"

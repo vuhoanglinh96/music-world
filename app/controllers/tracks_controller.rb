@@ -1,4 +1,15 @@
 class TracksController < ApplicationController
+  def index
+    if params[:search]
+      @track = Track.search(params[:search]).select(:id, :title, :song,
+        :user_id, :genre, :description, :image).paginate page:
+        params[:page], per_page: 10
+    else
+      @track = Track.select(:id, :title, :song, :user_id,
+        :genre, :description, :image).paginate page: params[:page], per_page: 10
+    end
+  end
+
   def new
     @track ||= Track.new
   end
